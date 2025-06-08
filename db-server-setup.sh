@@ -43,9 +43,4 @@ print_step "Restarting and enabling MariaDB..."
 systemctl restart mariadb
 systemctl enable mariadb
 
-print_step "Configuring UFW firewall..."
-ufw allow OpenSSH
-ufw allow from ${APP_SERVER_IP} to any port 3306 proto tcp
-ufw --force enable
-
 print_step "Database server setup complete (LOCAL USE ONLY)."
