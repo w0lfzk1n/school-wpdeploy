@@ -5,7 +5,7 @@ DB_NAME="wordpress_db"
 DB_USER="wp_user"
 DB_PASS="wp_pass123"
 DB_ROOT_PASS="root_pass123"
-APP_SERVER_IP="192.168.23.137"  # IP of the App Server
+APP_SERVER_IP="192.168.40.10"  # IP of the App Server
 
 # === Helper function for clear step output ===
 print_step() {
