@@ -4,7 +4,7 @@
 DB_NAME="wordpress_db"
 DB_USER="wp_user"
 DB_PASS="wp_pass123"
-DB_HOST="192.168.23.138"  # IP of the DB Server
+DB_HOST="192.168.60.10"  # IP of the DB Server
 WP_DIR="/var/www/html"
 
 # === Helper function for clear step output ===
