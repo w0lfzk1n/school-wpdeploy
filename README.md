@@ -42,6 +42,16 @@ Ensure both servers can ping each other.
 
 ---
 
+**Install git**
+
+`apt install git`
+
+Then clone this repo:
+
+`git clone https://github.com/w0lfzk1n/school-wpdeploy`
+
+---
+
 ### 2. 🔐 Initial Package Updates
 
 **The Database Server has to be setup first!**
