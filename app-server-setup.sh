@@ -20,7 +20,7 @@ print_step "Updating system packages..."
 apt update && apt upgrade -y
 
 print_step "Installing Apache, PHP, and required extensions..."
-apt install apache2 php php-mysql libapache2-mod-php php-cli php-curl php-gd php-mbstring php-xml php-xmlrpc php-soap php-intl php-zip unzip ufw -y
+apt install apache2 php php-mysql libapache2-mod-php php-cli php-curl php-gd php-mbstring php-xml php-xmlrpc php-soap php-intl php-zip unzip -y
 
 print_step "Enabling Apache mod_rewrite..."
 a2enmod rewrite
