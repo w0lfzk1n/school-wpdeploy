@@ -56,10 +56,5 @@ sed -i "s/username_here/${DB_USER}/" ${WP_DIR}/wp-config.php
 sed -i "s/password_here/${DB_PASS}/" ${WP_DIR}/wp-config.php
 sed -i "s/localhost/${DB_HOST}/" ${WP_DIR}/wp-config.php
 
-print_step "Configuring UFW firewall..."
-ufw allow OpenSSH
-ufw allow 'Apache'
-ufw --force enable
-
 print_step "Application server setup complete (LOCAL USE ONLY)."
 echo "Visit http://${APP_SERVER_IP} to complete WordPress installation."
