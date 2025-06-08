@@ -51,7 +51,7 @@ apt install git
 Then clone this repo:
 
 ```bash
-git clone https://github.com/w0lfzk1n/school-wpdeploy
+git clone https://github.com/w0lfzk1n/school-wpdeploy.git
 ```
 
 ---
