@@ -44,11 +44,15 @@ Ensure both servers can ping each other.
 
 **Install git**
 
-`apt install git`
+```bash
+apt install git
+```
 
 Then clone this repo:
 
-`git clone https://github.com/w0lfzk1n/school-wpdeploy`
+```bash
+git clone https://github.com/w0lfzk1n/school-wpdeploy
+```
 
 ---
 
