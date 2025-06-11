@@ -12,7 +12,7 @@ This is a simple guide and overview of the installation process using automated 
 
 ### WordPress Admin
 - **Username:** `tidder-admin`  
-- **Password:** `Mc(kzRiUm)f)#8OB0z`
+- **Password:** `SuperAdmin123`
 
 ### Plugins:
 - **UpdraftPlus**
