@@ -70,56 +70,36 @@ sudo apt update && sudo apt upgrade -y
 
 ### 3. 📦 Install & Run Scripts
 
-#### On **Database Server** (10.0.0.2)
+#### On **Database Server** (192.168.60.10 = DMZ)
 
-1. Copy `db_server.sh` to the server.
+1. Copy `db-server-setup.sh` to the server.
 2. Make it executable and run:
 
 ```bash
-chmod +x db_server.sh
-sudo ./db_server.sh
+chmod +x db-server-setup.sh
+sudo ./db-server-setup.sh
 ```
 
-#### On **Application Server** (10.0.0.1)
+#### On **Application Server** (192.168.40.10 = LAN)
 
-1. Copy `app_server.sh` to the server.
+1. Copy `app-server-setup.sh` to the server.
 2. Make it executable and run:
 
 ```bash
-chmod +x app_server.sh
-sudo ./app_server.sh
+chmod +x app-server-setup.sh
+sudo ./app-server-setup.sh
 ```
 
-✅ WordPress will be hosted locally at `http://10.0.0.1`
+✅ WordPress will be hosted locally at `http://192.168.40.10`
 
 ---
 
-### 4. 🔥 Firewall Configuration (UFW)
-
-#### On **DB Server**:
-
-Allow access to MySQL only from App Server:
-
-```bash
-sudo ufw allow from 10.0.0.1 to any port 3306 proto tcp
-```
-
-#### On **App Server**:
-
-Allow HTTP (Apache):
-
-```bash
-sudo ufw allow "Apache Full"
-```
-
----
-
-### 5. 🌐 Access WordPress in Browser
+### 4. 🌐 Access WordPress in Browser
 
 On a device within the same network, visit:
 
 ```
-http://10.0.0.1
+http://192.168.40.10
 ```
 
 You should see the **WordPress installation wizard**. Complete the setup by entering:
@@ -141,6 +121,12 @@ You should see the **WordPress installation wizard**. Complete the setup by ente
 
 ---
 
-# Wordpress Setup / Settings
+# Import Site
 
-- Go to Settings and change the permalinks to 'page'
+In the `exports/` folder, you will find several ZIP files.
+
+Install the plugin **UpdraftPlus**
+
+Click on **Upload Savefiles** and add all the files.
+
+Then press **restore** and you are done.
