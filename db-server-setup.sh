@@ -5,7 +5,22 @@ DB_NAME="wordpress_db"
 DB_USER="wp_user"
 DB_PASS="wp_pass123"
 DB_ROOT_PASS="root_pass123"
-APP_SERVER_IP="192.168.40.10"  # IP of the App Server
+APP_SERVER_IP="192.168.203.128"  # IP of the App Server
+
+# Confirm with the user, that the IP addresses are correct and not from tetsing environment
+echo ""
+echo "------------------------------------------------------------"
+echo "[!] Please confirm the following configuration:"
+echo "Database Name: ${DB_NAME}"
+echo "Database User: ${DB_USER}"
+echo "Database Password: ${DB_PASS}"
+echo "App Server IP: ${APP_SERVER_IP}"
+echo "------------------------------------------------------------"
+read -p "Is this correct? (yes/no): " confirm
+if [[ "$confirm" != "yes" ]]; then
+    echo "Exiting setup. Please check your configuration."
+    exit 1
+fi
 
 # === Helper function for clear step output ===
 print_step() {
